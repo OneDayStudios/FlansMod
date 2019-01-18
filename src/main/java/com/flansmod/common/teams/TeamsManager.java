@@ -1096,15 +1096,15 @@ public class TeamsManager
 	{
 		if(event.world.isRemote)
 			return;
-		if(event instanceof WorldEvent.Load)
-		{
-			loadPerWorldData(event, event.world);
-			savePerWorldData(event, event.world);
-		}
-		if(event instanceof WorldEvent.Save)
-		{
-			savePerWorldData(event, event.world);
-		}
+//		if(event instanceof WorldEvent.Load)
+//		{
+//			loadPerWorldData(event, event.world);
+//			savePerWorldData(event, event.world);
+//		}
+//		if(event instanceof WorldEvent.Save)
+//		{
+//			savePerWorldData(event, event.world);
+//		}
 	}
 	
 	private void loadPerWorldData(Event event, World world)

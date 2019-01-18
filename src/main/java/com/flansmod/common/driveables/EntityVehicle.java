@@ -187,7 +187,15 @@ public class EntityVehicle extends EntityDriveable implements IExplodeable
 			}
 			case 6 : //Exit : Get out
 			{
-				seats[0].riddenByEntity.mountEntity(null);
+				if (seats[0] == null) {
+                                    System.out.println("Attempting to dismount from null seat!");
+                                    return true;
+                                }
+                                if (seats[0].riddenByEntity == null) {
+                                    System.out.println("Attempting to dismount when noone is mounted!"); 
+                                    return true;
+                                }
+                                seats[0].riddenByEntity.mountEntity(null);
           		return true;
 			}
 			case 7 : //Inventory
