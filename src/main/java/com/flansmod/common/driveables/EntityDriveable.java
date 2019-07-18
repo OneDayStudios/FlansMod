@@ -915,7 +915,7 @@ public abstract class EntityDriveable extends Entity implements IControllable, I
 					if(!worldObj.isRemote)
 					{	
 						blockHit.dropBlockAsItem(worldObj, x, y, z, meta, 1);		
-						worldObj.setBlockToAir(x, y, z);
+						//worldObj.setBlockToAir(x, y, z);
 					}
 				}
 				else

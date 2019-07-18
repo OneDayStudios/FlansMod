@@ -58,13 +58,13 @@ public class CommandTeams extends CommandBase
 		if(split[0].equals("survival"))
 		{
 			teamsManager.explosions = true;
-			teamsManager.driveablesBreakBlocks = true;
+			teamsManager.driveablesBreakBlocks = false;
 			teamsManager.bombsEnabled = true;
 			teamsManager.bulletsEnabled = true;
 			teamsManager.forceAdventureMode = false;
 			teamsManager.overrideHunger = false;
 			teamsManager.canBreakGuns = true;
-			teamsManager.canBreakGlass = true;
+			teamsManager.canBreakGlass = false
 			teamsManager.armourDrops = true;
 			teamsManager.weaponDrops = 1;
 			teamsManager.vehiclesNeedFuel = true;
