@@ -64,7 +64,7 @@ public class CommandTeams extends CommandBase
 			teamsManager.forceAdventureMode = false;
 			teamsManager.overrideHunger = false;
 			teamsManager.canBreakGuns = true;
-			teamsManager.canBreakGlass = false
+			teamsManager.canBreakGlass = false;
 			teamsManager.armourDrops = true;
 			teamsManager.weaponDrops = 1;
 			teamsManager.vehiclesNeedFuel = true;
